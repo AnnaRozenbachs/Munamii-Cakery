@@ -1,7 +1,8 @@
 $(function()
 {
-    var currentPage =window.location.pathname.replace("/", "");
-    $(".menulink[href='" + currentPage + "']").addClass("active");
+    var currentPath = window.location.pathname;
+    currentPath = currentPath.substring(currentPath.lastIndexOf("/")+1);
+    $(".menulink[href='" + currentPath + "']").addClass("active");
 
     $('#product-CupCakes').on('click', function(){
         $('#cupcakes').removeClass('product-hide');
