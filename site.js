@@ -1,5 +1,8 @@
 $(function()
 {
+    var currentPage =window.location.pathname.replace("/", "");
+    $(".menulink[href='" + currentPage + "']").addClass("active");
+
     $('#product-CupCakes').on('click', function(){
         $('#cupcakes').removeClass('product-hide');
         $('#cupcakes').addClass('product-active');

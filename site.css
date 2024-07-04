@@ -20,6 +20,9 @@
 {
     opacity: 0.4;
 }
+.menulink.active{
+   text-decoration: underline;
+}
 body
 {
     margin: 0;
